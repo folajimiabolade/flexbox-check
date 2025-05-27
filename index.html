@@ -21,9 +21,6 @@
       .pricing-plan {
         text-align: center;
         background: #B2CD9C;
-        border-radius: 6px;
-        padding-top: 40px;
-        padding-bottom: 40px;
       }
 
       .plan-title {
@@ -43,10 +40,6 @@
         border: none;
         background: #CA7842;
         color: #F0F2BD;
-        border-radius: 4px;
-        padding: 8px;
-        padding-left: 12px;
-        padding-right: 12px;
       }
 
       li {
@@ -59,15 +52,36 @@
         .pricing-container  {
           display: flex;
           flex-direction: column;
-          height: 780px;
-          justify-content: space-around;
+          gap: 2vh;
           align-items: center;
 
         }
 
         .pricing-plan {
-          min-width: 230px;
+          min-width: 50vw;
+          min-height: 25vh;
+          border-radius: 6vw;
+          padding: 5.5vh 3vw;
         }
+
+        .plan-title {
+        font-weight: bold;
+        font-size: 8vw;
+      }
+
+      .plan-price {
+        font-weight: bold;
+        font-size: 11vw;
+      }
+
+      .plan-price ~ * {
+        font-size: 5.2vw
+      }
+
+      button {
+        border-radius: 1.6vw;
+        padding: 2vh 8vw;
+      }
 
       }
 
@@ -82,21 +96,30 @@
         }
 
         .pricing-plan {
-          flex-basis: 30%
+          flex-basis: 30vw
         }
 
         .plan-title {
-          font-size: 0.85rem
+          font-size: 1.7vw
         }
 
         .plan-price {
-          font-size: 1.2rem
+          font-size: 2.4vw
         }
 
         .plan-price ~ * {
-          font-size: 0.6rem
+          font-size: 1.2vw
         } 
         
+        .pricing-plan {
+        border-radius: 0.6vw;
+        padding: 4vh 2vw;
+      }
+
+      button {
+        border-radius: 0.6vw;
+        padding: 1vh 3vw;
+      }
 
       }
     </style>
